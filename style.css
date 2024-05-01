@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #F5D45B;
+    --First-back: #564A1F;
+    --texts: white;
+    --Red: rgb(238, 90, 90);
+    --blue: rgb(22, 110, 198);
+    --orange: orange;
+    --dark: black;
+    --paragraf: rgb(215, 211, 211);
+    --lightBlack: rgba(0, 0, 0, 0.332);
+    --newBlack: rgba(0, 0, 0, 0.591);
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+}
+.main {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--main-color);
+    font-family: "Roboto", sans-serif;
+    font-style: normal; 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.main section:nth-child(1) {
+    background-color:  var(--First-back);
+    border-radius: 20px;
+    border-radius: 15px;
+    width: 90%;
+    margin: 5% 5% 5% 5%;
+    height: 90%;
+
+}
+.main section:nth-child(1) h1{
+    color: var(--texts);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+
+    /*  font-family: Underground */
+}
+.main section:nth-child(1) h3 {
+    color: var(--texts);
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -30px;
+
+}
+.main section:nth-child(1) div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+   
+}
+.main section:nth-child(1) fieldset {
+    text-align: center;
+    margin: 6px 0 0 0;
+    padding: 0;
+    border: none;
+
+}
+
+.main section:nth-child(1) fieldset .NewStyle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+    background-color: var(--texts);
+    border-radius: 20px;
+}
+
+.main section:nth-child(1) fieldset p {
+    margin: 16px 24px 0 0;
+    text-transform: uppercase;
+   font-size: 0.8vW;
+}
+.main section:nth-child(1) fieldset p:nth-child(1) {
+    /* background-color: var(--main-color); */
+    padding: 1rem;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.main section:nth-child(1) fieldset p:nth-child(4) {
+    font-weight: 600;
+}
+
+.main section:nth-child(1) .listGroup ul{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+.main section:nth-child(1) .listGroup ul li {
+justify-content: center;
+list-style: none;
+margin: 3px;
+padding: 2%;
+}
+.main section:nth-child(1) .listGroup ul li:nth-child(1) {
+    background-color: var(--Red);
+    color: var(--texts);
+    border-radius: 45%;
+}
+.main section:nth-child(1) .listGroup ul li:nth-child(2) {
+    background-color: var(--main-color);
+    border-radius: 45%;
+}
+.main section:nth-child(1) .listGroup ul li:nth-child(3) {
+    background-color: var(--blue);
+    border-radius: 45%;
+    color: var(--texts);
+}
+.main section:nth-child(1) .listGroup ul li:nth-child(4) {
+    background-color: var(--orange);
+    border-radius: 45%;
+
+}
+
+
+.main section:nth-child(1) .WifiInfo {
+display: flex;
+flex-direction: row;
+width: 90%;
+justify-content: center;
+margin: 0 5% 0 5%; 
+margin-top: 3rem;
+}
+
+.WifiInfo article {
+    background-color: var(--texts);
+    border-radius: 20px;
+    width: 80%;
+padding: 5%;
+margin: 1%;
+    text-align: center;
+
+}
+.WifiInfo article p {
+   font-size: 12px;
+   text-align: left;
+}
+
+#news {
+color: var(--paragraf);
+  margin-top: 1%;
+display: none;
+max-height: 4vw;
+overflow: auto;
+overflow: hidden;
+max-width: 100%;
+margin-left: 2%;
+position: relative;
+margin-top: 1%;
+border-radius: 20px;
+   
+}
+ #getNews{
+    animation: news 30s ease-in-out infinite;
+    position: relative;
+   top: 60px;
+
+}
+
+#getNews p{
+    font-size: 0.9vw;
+   
+}
+
+#WeekFoods {
+    border: 1px solid red;
+    max-height: 20%;
+}
+ @keyframes news {
+    0% {top: 170px; }
+    100% { top: -470px;}
+} 
+
+
+@media (min-width:1100px) { 
+
+    #news {
+display: block;
+
+    }
+
+}
+#GetFood hr{
+border: none;
+border-top: 1px dotted;
+height: 1px;
+}
+
+#GetFood, p {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+/* second section start */
+
+.main section:nth-child(2) {
+    width: 110%;
+    position: relative;
+    margin: 0 0 0 -3%;
+    padding: 0;
+}
+
+
+.main section:nth-child(2) #Time {
+    position: relative;
+    left: 38.5%;
+    display: flex;
+    justify-content: center;
+    color: var(--texts);
+    border-radius: 20px;
+    margin: 0;
+    max-width: 8.2vw;
+    margin-top: 1rem;
+  
+}
+.main section:nth-child(2) #Time hgroup {
+    display: flex;
+    flex-direction: row;
+    gap: 0.01rem;
+    margin: 0;
+    
+    
+}
+.main section:nth-child(2) #Time hgroup h3 {
+    background-color: var(--dark);
+    padding: 1vw;
+    border-radius: 20px;
+    margin: 0 3px 0 0;
+    font-size: 35px;
+    
+}
+.WifiInfo article h4{
+    text-transform: uppercase;
+    
+}
+.WifiInfo article  p span{
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+.main section:nth-child(2) div:nth-child(2) {
+    background-color: var(--First-back);
+    border-radius: 20px;
+    color: var(--texts);
+    padding: 6% 3% 6% 3%;
+    margin: 1rem 1rem 1rem 0;
+    margin-top: 1rem;
+}
+
+.main section:nth-child(2) div:nth-child(2) h3 {
+    text-align: center;
+}
+.main section:nth-child(2) div:nth-child(2) p, .main section:nth-child(2) div:nth-child(3) figure p {
+color: var(--paragraf);
+font-size: 0.8vw;
+}
+
+
+.main section:nth-child(2) div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    text-align: center;
+}
+.main section:nth-child(2) div:nth-child(3) figure {
+    display: block;
+    background-color: var(--First-back);
+    border-radius: 20px;
+    color: var(--texts);
+    padding: 10% 0 10% 0;
+    margin: 9% 1% 0 0;
+
+}
+.main section:nth-child(2) div:nth-child(3) figure:nth-child(1) {
+    width: 140%;
+}
+.main section:nth-child(2) div:nth-child(3) figure:nth-child(2) {
+    width: 210%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../image/pexels-dana-tentis-1213710.jpg");
+    background-position: center;
+}
+
+
+/* image licence: 
+Item Title:                      a woman waiting in a bus for the train at night
+Item URL:                        https://elements.envato.com/a-woman-waiting-in-a-bus-for-the-train-at-night-HC9PEJL
+Item ID:                         HC9PEJL
+Author Username:                 wirestock
+Licensee:                        Omid Deiminiyat
+Registered Project Name:         Photos
+License Date:                    April 9th, 2024
+Item License Code:               AR8QN24BMS */
+
+/* Start third section */
+.main section:nth-child(3) {
+    background-image: url("../image/a-woman-waiting-in-a-bus-for-the-train-at-night-2024-03-26-21-37-43-utc.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    margin-left: 5%;
+    position: relative;
+    height: 100%;
+}
+
+.main section:nth-child(3) h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.main section:nth-child(3) h1 span:nth-child(1) {
+    color: var(--texts);
+    font-weight: 700;
+    font-size: 75px; 
+    font-family: "Roboto", sans-serif;
+} 
+.main section:nth-child(3) h1 span:nth-child(2) {
+    color: var(--texts);
+    font-weight: 300;
+    font-size: 75px;
+    font-family: "Roboto", sans-serif;
+   
+} 
+#BusData .material-symbols-outlined{
+    color: white;
+    font-size: 5.5rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.main section:nth-child(3) div {
+   
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-top: 20%;
+    padding: 0;
+    text-align: center;
+  font-family: "Roboto", sans-serif; 
+
+}
+.main section:nth-child(3) div:nth-child(1) {
+    font-weight: 800;
+  
+    
+}
+.main section:nth-child(3) div fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    border-radius: 20px;
+    margin-top: 6px;
+    border: none;
+    padding: 0;
+    width: 90%;
+    margin-left: 5%;
+}
+.main section:nth-child(3) div fieldset p {
+    padding: 12px;
+    margin: 0;
+    
+}
+
+.main section:nth-child(3) div fieldset .ThirdStyle {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: var(--newBlack);
+    border-radius: 20px;
+  
+
+}
+.main section:nth-child(3) div fieldset .ThirdStyle p:nth-child(1) {
+    border-radius: 20px;
+    padding: 17px 23px 0 23px;
+    font-size: 1vw;
+}
+.main section:nth-child(3) div fieldset .ThirdStyle p:nth-child(2) {
+   color: var(--texts);
+   text-transform: uppercase;
+   font-size: 0.8vw;
+
+}
+.main section:nth-child(3) div fieldset .ThirdStyle p:nth-child(3) {
+    color: var(--texts);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9vw;
+ 
+ }
+.main section:nth-child(3) div fieldset .ThirdStyle p {
+    font-size: 0.7vw;
+}
+
+.main section:nth-child(3) hgroup  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--main-color); 
+    margin: 0;
+    padding: 0;
+   
+}
+.main section:nth-child(3) hgroup div:nth-child(1){
+    font-weight: 400;
+    font-size: 58px;
+    position: relative;
+    
+}
+.main section:nth-child(3) hgroup div:nth-child(2){
+    font-weight: 400;
+    font-size: 97px;
+    position: relative;
+    height: 10%;
+    top: 10%;
+    margin-left: 10%;
+    
+}
+
+
+.main section:nth-child(3) hgroup div:nth-child(1) {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.main section:nth-child(3) hgroup div:nth-child(1) h1{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 70px;
+}
+
+.main section:nth-child(3) hgroup div:nth-child(2) img {
+    fill: blue;
+    width: 60%;
+    left: 85px;
+    top: -50px;
+position: absolute;
+
+
+}
+
+#DateAndTime {
+    position: flex;
+    justify-content: center;
+    font-size: 1vw;
+   
+}
+
+.main section:nth-child(3) .NewDato {
+    position: absolute;
+    font-weight: 100;
+    font-size: 3vw;
+    color: red;
+}
+.main section:nth-child(3) #getDataWeather h1{
+   font-size: 4vw;
+   margin-left: 4vw;
+   top: -10%;
+   position: relative;
+}
+
+.main section:nth-child(3) #Temprator {
+    font-size: 6vw;
+    position: relative;
+    top: 30%;
+    left: -10%;
+}
+.main section:nth-child(3) #Temprator  img {
+    top: -220%;
+}
+
+.Red {
+    background-color: var(--Red);
+}
+
+figure img{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    }
+
+.Yellow {
+    background-color: var(--main-color);
+}
+.Blue {
+    background-color: var(--blue)
+}
+.Orange {
+    background-color: orange;
+}
+
